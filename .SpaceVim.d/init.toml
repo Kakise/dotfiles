@@ -25,6 +25,7 @@
     enable_statusline_mode = true
     autocomplete_method = "coc"
     bootstrap_after = 'cock#after'
+    bootstrap_before = 'cock#before'
 
 # Enable autocomplete layer
 [[layers]]
@@ -75,7 +76,10 @@
   name = "lang#markdown"
 
 [[layers]]
-  name = "github"
+  name = "git"
+
+[[layers]]
+  name = "tmux"
 
 [[custom_plugins]]
   repo = 'cdelledonne/vim-cmake'
