@@ -1,0 +1,82 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2022 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = true
+    autocomplete_method = "coc"
+    bootstrap_after = 'cock#after'
+
+# Enable autocomplete layer
+[[layers]]
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'bottom'
+  default_height = 5
+
+[[layers]]
+  name = "format"
+  format_on_save = true
+
+[[layers]]
+  name = "lang#c"
+  format_on_save = true
+
+[[layers]]
+  name = "ui"
+    enable_sidebar = true
+    enable_scrollbar = true
+    enable_indentline = true
+    enable_cursorword = false
+    indentline_char = '|'
+    conceallevel = 0
+    concealcursor = ''
+    cursorword_delay = 50
+    cursorword_exclude_filetype = []
+    indentline_exclude_filetype = []
+
+[[layers]]
+  name = "format"
+
+[[layers]]
+  name = "lang#javascript"
+  auto_fix = true
+  enable_flow_syntax = true
+  format_on_save = true
+
+[[layers]]
+  name = "lang#typescript"
+  format_on_save = true
+
+[[layers]]
+  name = "lang#markdown"
+
+[[layers]]
+  name = "github"
+
+[[custom_plugins]]
+  repo = 'cdelledonne/vim-cmake'
+
