@@ -26,6 +26,23 @@
     autocomplete_method = "coc"
     bootstrap_after = 'cock#after'
     bootstrap_before = 'cock#before'
+    statusline_left_sections = [
+       'winnr',
+       'major mode',
+       'filename',
+       'fileformat',
+       'minor mode lighters',
+       'version control info',
+       'search status'
+    ]
+    # right sections of statusline
+    statusline_right_sections = [
+       'cursorpos',
+       'percentage',
+       'input method',
+       'date',
+       'time'
+    ]
 
 # Enable autocomplete layer
 [[layers]]
